@@ -5,6 +5,10 @@ This is my first project, feel free to email me your comments/criticism/etc.
 
 -----------------------------------------------------------------------------
 
+v0.2:
+  -Fixed graphical interface to work on most screen resolutions
+  
+-----------------------------------------------------------------------------
 
 v0.1:
   -Made graphical interface
