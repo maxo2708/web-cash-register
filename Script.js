@@ -3,7 +3,7 @@ var Total = 0
 $(document).ready(function () {
     //Hides main application
     $('#Overlay2').hide();
-
+    
     //Hides Start Screen and Shows Application
     $('#OverlayButton').click(function () {
         $('#Overlay1').fadeOut('slow');
@@ -31,7 +31,7 @@ $(document).ready(function () {
             alert("The value in the Price Box is Not a Number");
         }
         else {
-            $('#UsrPrice').append('<p class="item">' + PriceVal + '</p>');
+            $('#Price').append('<p class="item">' + PriceVal + '</p>');
             
             //Calculates current total
             Total += Number(PriceVal);
@@ -39,14 +39,14 @@ $(document).ready(function () {
             
             //Checks items name then appends it
             if (ItemName == "" || ItemName == null) {
-                $('#UsrItem').append('<p class="item"> Unidentified Item </p>');
+                $('#Item').append('<p class="item"> Unidentified Item </p>');
             }
             else {
-                $('#UsrItem').append('<p class="item">' + ItemName + '</p>');
+                $('#Item').append('<p class="item">' + ItemName + '</p>');
             }
         }
     }
-    )
+    ) 
 
 
 })
