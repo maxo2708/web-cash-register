@@ -10,3 +10,4 @@ v0.1:
   -Made graphical interface
   -Price field verifies if what is inputted is a number
   -Adds total at the end
+  -Color added for devolopment purposes
