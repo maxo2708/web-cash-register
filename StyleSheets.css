@@ -1,0 +1,276 @@
+*  {
+    position: relative;
+    overflow-x: hidden;
+}
+html {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+}
+
+
+/*Overlay 1*/
+#Overlay1 {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Cash_register%2C_built_1904_in_Ohio.jpg/739px-Cash_register%2C_built_1904_in_Ohio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#OverlayText {
+    height: 50%;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 1.5em;
+    color: #fceabb; 
+}
+
+#OverlayText h1 {
+    font-size: 4em;
+}
+
+/*Button Styling*/
+#OverlayButton {
+	-moz-box-shadow:inset 0px 1px 1px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 1px 0px #f5978e;
+	box-shadow:inset 0px 1px 1px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 5px #810e05;
+}
+#OverlayButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+#OverlayButton:active {
+	position:relative;
+	top:1px;
+}
+/*End Button Style*/
+
+#Footer1 {
+    text-align: center;
+    padding-bottom: 50%;
+    padding-top: 3%;
+}
+
+#Footer1 a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+}
+
+/*Overlay 2*/
+#Overlay2 {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;  
+    overflow: hidden;
+    
+}
+
+#Header {
+    height: 10%;
+    width:100%;
+    background-color:gray;
+    clear: both;
+    font-family: Verdana;
+    font-weight: bold; 
+    display: inline-block;
+    overflow: hidden;
+}
+
+#Title {
+    font-size: 3em;
+    margin-top: 0.01em;
+    padding-top: 0.3em;
+    display: inline-block;
+    
+}
+
+#Title span {
+    font-size: 0.2em;
+}
+
+#Items {
+    height: 71%;
+    width: 50%;
+    float: left;
+    overflow: auto;
+    background-color: yellow;
+}
+
+#Price {
+    height: 71%;
+    width: 50%;
+    float: right;
+    overflow: auto;
+    background-color: green
+}
+
+#Total {
+    background-color: yellow;
+    clear: both;
+}
+
+#Entry {
+    margin-top: -1.2em;
+    height: 8%;
+    width: 100%;
+    clear: both;
+    background-color: blue
+}
+
+#Entry form p {
+    display: inline-block;
+    color: white;
+    font-size: 150%;
+    margin-top: 0.5em;
+}
+
+#PriceP {
+    left: 40%
+}
+
+
+#Entry form input {
+    margin-top: -10em;
+    font-size: 0.946em;
+    
+}
+
+#ItemName {
+    left: 2%
+}
+
+#PriceVal {
+    
+    clear: both;
+    left: 45%;
+}
+
+/*Button Styling*/
+#Submit {
+    width: 100%;
+    display: inline-block;
+    margin-right: 1em;
+	-moz-box-shadow:inset 0px 1px 8px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 8px 0px #f5978e;
+	box-shadow:inset 0px 1px 8px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+	-moz-border-radius-topright:8px;
+	border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright:8px;
+	border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-bottom-left-radius:8px;
+	text-indent:0;
+	border:1px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 8px #810e05;
+}
+#Submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+#Submit:active {
+	position:relative;
+	top:1px;
+}
+/*End Button Style*/
+
+#Footer2 {
+    height: 5%;
+    width: 100%;
+    clear: both;
+    background-color: purple;
+}
+
+.DivP {
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
+
+#Github {
+    
+    color: white;
+    font-size: 16px;
+    display: block;
+    float: right;
+    margin-top: 0.01em;
+    padding-top: 0.3em;
+}
+
+.item {
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: normal;
+    text-decoration-line: none;
+}
