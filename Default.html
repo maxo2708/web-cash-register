@@ -27,13 +27,14 @@
                 <a href="https://github.com/maxo2708/web-cash-register" id="Github">Find this on GitHub!</a>
             </div>
             
+            <!--Main Application-->
             <div id="Items">
-                <p class="DivP" id="UsrItem">Item:</p>
+                <p class="DivP" id="Item">Item:</p>
                 <br/>
             </div>
             
-            <div id="Price">
-                <p class="DivP" id="UsrPrice">Price:</p>
+            <div id="Prices">
+                <p class="DivP" id="Price">Price:</p>
                 <br/>
             </div>
             
@@ -41,14 +42,18 @@
                 <p class="DivP" id="LogTotal">Total:</p>
             </div>
             
-            <div id="Entry">
+           <!--User Input-->
+             <div id="Entry">
                 <form>
-                    <p>Item Name: </p><input name="ItemName" id="ItemName"type="text"/>
-                    <p id="PriceP">Price: </p><input name="PriceVal" id="PriceVal"type="number"/>
+                    <div id="UsrItem"> 
+		                <p>Item Name: </p><input name="ItemName" id="ItemName"type="text"/>
+                     </div>
+                    <div id="UsrPrice">
+                        <p>Price: </p><input name="PriceVal" id="PriceVal"type="number"/>
+                    </div>       
                 </form>
-            </div>
-             <div id="Submit">Enter</div>
-           
+                    </div>
+                    <div id="Submit">Enter</div>
             </div>
         </div>
     </body>
