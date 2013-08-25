@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            /*Overlay 1*/
+            #Overlay1 {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+                background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Cash_register%2C_built_1904_in_Ohio.jpg/739px-Cash_register%2C_built_1904_in_Ohio.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #OverlayText {
+                height: 50%;
+                text-align: center;
+                padding-top: 20%;
+                font-size: 1.5em;
+                color: #fceabb; 
+            }
+
+            #OverlayText h1 {
+                font-size: 4em;
+            }
+
+            /*Button Styling*/
+            #OverlayButton {
+	            -moz-box-shadow:inset 0px 1px 1px 0px #f5978e;
+	            -webkit-box-shadow:inset 0px 1px 1px 0px #f5978e;
+	            box-shadow:inset 0px 1px 1px 0px #f5978e;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	            background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	            background-color:#f24537;
+	            -webkit-border-top-left-radius:6px;
+	            -moz-border-radius-topleft:6px;
+	            border-top-left-radius:6px;
+	            -webkit-border-top-right-radius:6px;
+	            -moz-border-radius-topright:6px;
+	            border-top-right-radius:6px;
+	            -webkit-border-bottom-right-radius:6px;
+	            -moz-border-radius-bottomright:6px;
+	            border-bottom-right-radius:6px;
+	            -webkit-border-bottom-left-radius:6px;
+	            -moz-border-radius-bottomleft:6px;
+	            border-bottom-left-radius:6px;
+	            text-indent:0;
+	            border:1px solid #d02718;
+	            display:inline-block;
+	            color:#ffffff;
+	            font-family:Arial;
+	            font-size:15px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            width:100px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 5px #810e05;
+            }
+            
+            #OverlayButton:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	            background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	            background-color:#c62d1f;
+            }
+            
+            #OverlayButton:active {
+	            position:relative;
+	            top:1px;
+            }
+            /*End Button Style*/
+
+            #Footer1 {
+                text-align: center;
+                padding-bottom: 50%;
+                padding-top: 3%;
+            }
+
+            #Footer1 a {
+                text-decoration: none;
+                text-decoration-line: none;
+                color: white;
+            }
+
+            /*Overlay 2*/
+            #Overlay2 {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                border: 0px;  
+            }
+
+            #Header {
+                height: 10%;
+                width:100%;
+                background-color:gray;
+                clear: both;
+                font-family: Verdana;
+                font-weight: bold; 
+            }
+
+            #Github {
+    
+                color: white;
+                font-size: 16px;
+                display: block;
+                float: right;
+                margin-top: 0.01em;
+                padding-top: 0.3em;
+            }
+
+            #Title {
+                font-size: 3em;
+                margin-top: 0.01em;
+                padding-top: 0.3em;
+                display: inline-block;
+    
+            }
+
+            #Title span {
+                font-size: 0.2em;
+            }
+
+            /*Main Application*/
+            #Items {
+                height: 71%;
+                width: 50%;
+                float: left;
+                overflow: auto;
+                display: inline-block;
+                background-color: yellow;
+                padding: 0px;
+                margin: 0px;
+                min-height: 700px;
+            }
+
+            #Prices {
+                height: 71%;
+                width: 50%;
+                float: right;
+                overflow: auto;
+                display: inline-block;
+                min-height: 700px;
+                background-color: green
+            }
+
+            .item {
+                font-size: 1em;
+                text-decoration: none;
+                font-weight: normal;
+                text-decoration-line: none;
+            }
+
+            #Total {
+                background-color: yellow;
+                clear: both;
+            }
+
+            .DivP {
+                font-size: 1.3em;
+                font-weight: bold;
+    
+            }
+
+            /*User Input Section*/
+            #Entry {
+                margin-top: -1.2em;
+                height: 8%;
+                width: 100%;
+                clear: both;
+                background-color: blue
+            }
+
+            /*Left Side*/
+            #UsrItem {
+                float: left;
+                height: fill-available;
+                width: 50%;
+                background-color: pink;
+            }
+
+            #UsrItem p {
+               display: inline-block;
+            }
+
+            /*Right Side*/
+            #UsrPrice {
+                float: right;
+                height: fill-available;
+                width: 50%;
+                background-color: purple;
+            }
+
+            #UsrPrice p {
+                display: inline-block;
+            }
+
+            /*Button Style*/
+            #Submit {
+                width: 100%;
+                display: inline-block;
+                margin-right: 1em;
+	            -moz-box-shadow:inset 0px 1px 8px 0px #f5978e;
+	            -webkit-box-shadow:inset 0px 1px 8px 0px #f5978e;
+	            box-shadow:inset 0px 1px 8px 0px #f5978e;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	            background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	            background-color:#f24537;
+	            -webkit-border-top-left-radius:8px;
+	            -moz-border-radius-topleft:8px;
+	            border-top-left-radius:8px;
+	            -webkit-border-top-right-radius:8px;
+	            -moz-border-radius-topright:8px;
+	            border-top-right-radius:8px;
+	            -webkit-border-bottom-right-radius:8px;
+	            -moz-border-radius-bottomright:8px;
+	            border-bottom-right-radius:8px;
+	            -webkit-border-bottom-left-radius:8px;
+	            -moz-border-radius-bottomleft:8px;
+	            border-bottom-left-radius:8px;
+	            text-indent:0;
+	            border:1px solid #d02718;
+	            display:inline-block;
+	            color:#ffffff;
+	            font-family:Arial;
+	            font-size:19px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 8px #810e05;
+            }
+            #Submit:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	            background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	            background-color:#c62d1f;
+            }
+            #Submit:active {
+	            position:relative;
+	            top:1px;
+            }
+/*End Button Style*/
+        </style>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type='text/javascript'>
+            var Total = 0
+
+            $(document).ready(function () {
+                //Hides main application
+                $('#Overlay2').hide();
+    
+                //Hides Start Screen and Shows Application
+                $('#OverlayButton').click(function () {
+                    $('#Overlay1').fadeOut('slow');
+                    $('#Overlay2').fadeIn('slow');
+                })
+
+                //Prevents the use of the 'Enter' key
+                $('input').keypress(function (event) {
+                    if (event.keyCode == 13) {
+                    event.preventDefault();
+                    }
+                })
+
+                $('#Submit').click(function () {
+
+                    //Declare Variables
+                    var ItemName = $('input[name=ItemName]').val();
+                    var PriceVal = $('input[name=PriceVal]').val();
+
+                    //Verifies that the value in the 'Price Box' is valid
+                    if (PriceVal == "" || PriceVal == null) {
+                        alert("Please Enter in a Price");
+                    }
+                    else if (isNaN(PriceVal)) {
+                        alert("The value in the Price Box is Not a Number");
+                    }
+                    else {
+                        $('#Price').append('<p class="item">' + PriceVal + '</p>');
+            
+                    //Calculates current total
+                    Total += Number(PriceVal);
+                    $('#LogTotal').html('Total: ' + Total);
+            
+                    //Checks items name then appends it
+                    if (ItemName == "" || ItemName == null) {
+                        $('#Item').append('<p class="item"> Unidentified Item </p>');
+                    }
+                    else {
+                        $('#Item').append('<p class="item">' + ItemName + '</p>');
+                    }
+              }
+        }
+        ) 
+
+
+    })
+        </script>
+        <title>Cash Register</title>
+    </head>
+    <body>
+        <!--Overlay 1-->
+        <div id="Overlay1">
+            <div id="OverlayText">
+                <h1>Cash Register</h1>
+                <p>Presented by: Maxo2708</p>
+                <div id="OverlayButton">Start!</div>
+            </div>
+            <div id="Footer1">
+                <a href="http://commons.wikimedia.org/wiki/File:Cash_register,_built_1904_in_Ohio.jpg">Image from Wikimedia Commons</a>
+            </div>
+        </div>
+        <!--Overlay 2-->
+        <div id="Overlay2">
+            <div id="Header">
+                <p id="Title">Cash Register<span>Presented by Maxo2708</span></p>
+                <a href="https://github.com/maxo2708/web-cash-register" id="Github">Find this on GitHub!</a>
+            </div>
+            
+            <!--Main Application-->
+            <div id="Items">
+                <p class="DivP" id="Item">Item:</p>
+                <br/>
+            </div>
+            
+            <div id="Prices">
+                <p class="DivP" id="Price">Price:</p>
+                <br/>
+            </div>
+            
+            <div id="Total">
+                <p class="DivP" id="LogTotal">Total:</p>
+            </div>
+            
+           <!--User Input-->
+             <div id="Entry">
+                <form>
+                    <div id="UsrItem"> 
+		                <p>Item Name: </p><input name="ItemName" id="ItemName"type="text"/>
+                     </div>
+                    <div id="UsrPrice">
+                        <p>Price: </p><input name="PriceVal" id="PriceVal"type="number"/>
+                    </div>       
+                </form>
+                    </div>
+                    <div id="Submit">Enter</div>
+            </div>
+        </div>
+    </body>
+</html>
