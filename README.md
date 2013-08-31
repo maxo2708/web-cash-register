@@ -7,7 +7,7 @@ To try it out click <a href="http://htmlpreview.github.io/?https://github.com/ma
 -----------------------------------------------------------------------------
 
 v0.3: <br/>
-  -Added Checkout feature (Allows you to figure out change or amount left)
+  -Added Checkout feature (Allows you to figure out change or amount left) <br/>
   -Made it possible to reset the interface without having to refresh (At checkout)
   
 -----------------------------------------------------------------------------
