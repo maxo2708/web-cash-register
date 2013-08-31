@@ -132,7 +132,7 @@
     background-color: yellow;
     padding: 0px;
     margin: 0px;
-    min-height: 700px;
+    min-height: 650px;
 }
 
 #Prices {
@@ -141,7 +141,7 @@
     float: right;
     overflow: auto;
     display: inline-block;
-    min-height: 700px;
+    min-height: 650px;
     background-color: green
 }
 
@@ -184,6 +184,17 @@
     display: inline-block;
 }
 
+#UsrOwe {
+    float: left;
+    height: fill-available;
+    width: 50%;
+    background-color: pink;
+}
+
+#UsrOwe p {
+    display: inline-block;
+}
+
 /*Right Side*/
 #UsrPrice {
     float: right;
@@ -196,7 +207,120 @@
     display: inline-block;
 }
 
-/*Button Style*/
+#LogTotal {
+    display: inline-block;
+}
+
+#UsrPaid {
+    float: right;
+    height: fill-available;
+    width: 50%;
+    background-color: purple;
+}
+
+#UsrPaid p {
+    display: inline-block;
+}
+
+/*Button style for Checkout*/
+#Checkout {
+	float: right;
+    display: inline-block;
+    -moz-box-shadow:inset 0px 1px 6px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 6px 0px #cae3fc;
+	box-shadow:inset 0px 1px 6px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 5px #287ace;
+}
+#Checkout:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}
+#Checkout:active {
+	position:relative;
+	top:1px;
+}
+
+/*Button style for reset*/
+#Reset {
+	float: right;
+    display: inline-block;
+    -moz-box-shadow:inset 0px 1px 6px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 6px 0px #cae3fc;
+	box-shadow:inset 0px 1px 6px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 5px #287ace;
+}
+#Reset:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}
+#Reset:active {
+	position:relative;
+	top:1px;
+}
+
+/*Button Style for Submission*/
 #Submit {
     width: 100%;
     display: inline-block;
