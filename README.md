@@ -5,7 +5,12 @@ This is my first project, feel free to email me your comments/criticism/etc. <br
 To try it out click <a href="http://htmlpreview.github.io/?https://github.com/maxo2708/web-cash-register/blob/master/AllIn1.html">here!</a>
 
 -----------------------------------------------------------------------------
+v0.6: <br/>
+  -Added new setup page. Can now configure currency and tax <br/>
+  -Cleaner coding format <br/>
+  -Changed use of 'Enter' to substitute clicking the button
 
+-----------------------------------------------------------------------------
 v0.3: <br/>
   -Added Checkout feature (Allows you to figure out change or amount left) <br/>
   -Made it possible to reset the interface without having to refresh (At checkout)
