@@ -132,7 +132,7 @@
     background-color: yellow;
     padding: 0px;
     margin: 0px;
-    min-height: 650px;
+    min-height: 500px;
 }
 
 #Prices {
@@ -141,7 +141,7 @@
     float: right;
     overflow: auto;
     display: inline-block;
-    min-height: 650px;
+    min-height: 500px;
     background-color: green
 }
 
@@ -154,7 +154,25 @@
 
 #Total {
     background-color: yellow;
-    clear: both;
+    float: left;
+    display: inline-block;
+    width: 50%;
+    min-height: 200px;
+}
+
+#Total .DivP {
+    margin: 5px;
+    font-weight: normal;
+}
+
+
+#Buttons {
+    position: relative;
+    background-color: green;
+    float: right;
+    display: inline-block;
+    width: 50%;
+    min-height: 200px;
 }
 
 .DivP {
@@ -207,9 +225,7 @@
     display: inline-block;
 }
 
-#LogTotal {
-    display: inline-block;
-}
+
 
 #UsrPaid {
     float: right;
@@ -224,7 +240,7 @@
 
 /*Button style for Checkout*/
 #Checkout {
-	float: right;
+	position: absolute;
     display: inline-block;
     -moz-box-shadow:inset 0px 1px 6px 0px #cae3fc;
 	-webkit-box-shadow:inset 0px 1px 6px 0px #cae3fc;
@@ -259,6 +275,8 @@
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 5px #287ace;
+    bottom: 0;
+    right: 0;
 }
 #Checkout:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
@@ -266,14 +284,11 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
 	background-color:#4197ee;
 }
-#Checkout:active {
-	position:relative;
-	top:1px;
-}
+
 
 /*Button style for reset*/
 #Reset {
-	float: right;
+	position: absolute;
     display: inline-block;
     -moz-box-shadow:inset 0px 1px 6px 0px #cae3fc;
 	-webkit-box-shadow:inset 0px 1px 6px 0px #cae3fc;
@@ -308,16 +323,14 @@
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 5px #287ace;
+    bottom: 0;
+    right: 0;
 }
 #Reset:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
 	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
 	background-color:#4197ee;
-}
-#Reset:active {
-	position:relative;
-	top:1px;
 }
 
 /*Button Style for Submission*/
@@ -364,8 +377,73 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
 	background-color:#c62d1f;
 }
-#Submit:active {
+
+/*End Button Style*/
+
+#Overlay3 {
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+}
+
+#Setup {
+    margin: 25%;
+    margin-top: 0px;
+    background-color: yellow;
+}
+
+#Setup h1 {
+    text-align: center;
+}
+
+.psetup {
+    display: inline-block;
+}
+
+#SetupSubmit {
+    width: 100%;
+    display: inline-block;
+    margin-right: 1em;
+	-moz-box-shadow:inset 0px 1px 8px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 8px 0px #f5978e;
+	box-shadow:inset 0px 1px 8px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+	-moz-border-radius-topright:8px;
+	border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright:8px;
+	border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-bottom-left-radius:8px;
+	text-indent:0;
+	border:1px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 8px #810e05;
+}
+#SetupSubmit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+#SetupSubmit:active {
 	position:relative;
 	top:1px;
 }
-/*End Button Style*/
