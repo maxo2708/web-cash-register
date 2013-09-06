@@ -20,6 +20,22 @@
                 <a href="http://commons.wikimedia.org/wiki/File:Cash_register,_built_1904_in_Ohio.jpg">Image from Wikimedia Commons</a>
             </div>
         </div>
+        <!--Setup-->
+        <div id="Overlay3">
+            <div id="Setup">
+                <h1>Setup</h1>
+                <p class="psetup">Currency</p>
+                <select name="currency">
+                    <option value="$">USD</option>
+                    <option value="€">Euro</option>
+                </select>
+                <br/>
+                <p class="psetup">Tax</p>
+                <input type="text" name="Tax"/>
+                <p class="psetup">%</p>
+                <div id="SetupSubmit">Enter</div>
+            </div>
+        </div>
         <!--Overlay 2-->
         <div id="Overlay2">
             <div id="Header">
@@ -39,7 +55,13 @@
             </div>
             
             <div id="Total">
+                <br/><br/><br/><br/><br/>
+                <p class="DivP" id="LogSubtotal">Subtotal:</p>
+                <p class="DivP" id="LogTax">Tax:</p>
                 <p class="DivP" id="LogTotal">Total:</p>
+            </div>
+
+            <div id="Buttons">
                 <div id="Checkout">Checkout!</div>
                 <div id="Reset">Reset!</div>
             </div>
