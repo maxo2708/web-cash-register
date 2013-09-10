@@ -33,7 +33,23 @@
                 <p class="psetup">Tax</p>
                 <input type="text" name="Tax"/>
                 <p class="psetup">%</p>
+                <a href="#"><p id="ModifyP">Modify Inventory</p></a>
                 <div id="SetupSubmit">Enter</div>
+            </div>
+            <!--Inventory Editor-->
+            <div id="Inventory">
+                <h1>Inventory</h1>
+                <p class="InventoryP">Barcode</p> <input id="Barcode" name="Barcode" type="text"/>
+                <p class="InventoryP">Item Name</p> <input id="InventoryItem" name="InventoryItem" type="text"/>
+                <p class="InventoryP">Price</p> <input id="InventoryPrice" name="InventoryPrice" type="text"/>
+                <div id="InventoryInsert">Enter</div>
+                <br/><br/>
+                <div id="ItemList">
+                <p id="Placeholder"></p>
+                </div>
+                <br/>
+                <div id="InventoryClear">Reset</div>
+                <div id="ExitInventory">Finished</div>
             </div>
         </div>
         <!--Overlay 2-->
@@ -41,6 +57,7 @@
             <div id="Header">
                 <p id="Title">Cash Register<span>Presented by Maxo2708</span></p>
                 <a href="https://github.com/maxo2708/web-cash-register" id="Github">Find this on GitHub!</a>
+                <div id="Settings">Settings</div>
             </div>
             
             <!--Main Application-->
@@ -69,6 +86,13 @@
            <!--User Input-->
              <div id="Entry">
                 <form>
+                    <div id="ManualAuto">
+                    <div id="Scanner">Scan Barcode</div>
+                    <div id="Manual">Insert Manually</div>
+                    </div>
+                    <div id="Auto">
+                    <p class="Blue">Barcode:</p><input type="text" name="Barcode2"/> <small class="Blue" id="GoBack">Back</small>
+                    </div>
                     <div id="UsrItem"> 
 		                <p>Item Name: </p><input name="ItemName" id="ItemName"type="text"/>
                      </div>
@@ -76,7 +100,7 @@
                         <p>Amount Paid: </p><input name="UsrPaid" id="ItemName"type="text"/>
                     </div>
                     <div id="UsrPrice">
-                        <p>Price: </p><input name="PriceVal" id="PriceVal"type="number"/>
+                        <p>Price: </p><input name="PriceVal" id="PriceVal"type="number"/> <small id="GoBack2">Back</small>
                     </div>
                     <div id="UsrPaid">
                         <p id="Change">Change: </p>
