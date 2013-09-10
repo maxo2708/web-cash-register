@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <style>
             /*Overlay 1*/
-            #Overlay1 {
+            #Overlay1 { 
                 width: 100%;
                 height: 100%;
                 margin: 0px;
@@ -100,7 +100,7 @@
             #Header {
                 height: 10%;
                 width:100%;
-                background-color:gray;
+                background-color: #907373;
                 clear: both;
                 font-family: Verdana;
                 font-weight: bold; 
@@ -114,6 +114,56 @@
                 float: right;
                 margin-top: 0.01em;
                 padding-top: 0.3em;
+            }
+
+            /*Settings Button*/
+            #Settings {
+	            margin-top: 40px;
+                display: inline-block;
+                float: right;
+                -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	            box-shadow:inset 0px 1px 0px 0px #ffffff;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	            background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	            background-color:#ededed;
+	            -webkit-border-top-left-radius:6px;
+	            -moz-border-radius-topleft:6px;
+	            border-top-left-radius:6px;
+	            -webkit-border-top-right-radius:6px;
+	            -moz-border-radius-topright:6px;
+	            border-top-right-radius:6px;
+	            -webkit-border-bottom-right-radius:6px;
+	            -moz-border-radius-bottomright:6px;
+	            border-bottom-right-radius:6px;
+	            -webkit-border-bottom-left-radius:6px;
+	            -moz-border-radius-bottomleft:6px;
+	            border-bottom-left-radius:6px;
+	            text-indent:0;
+	            border:1px solid #dcdcdc;
+	            display:inline-block;
+	            color:#777777;
+	            font-family:arial;
+	            font-size:15px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            width:100px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 0px #ffffff;
+            }
+            #Settings:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	            background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	            background-color:#dfdfdf;
+            }
+            #Settings:active {
+	            position:relative;
+	            top:1px;
             }
 
             #Title {
@@ -135,7 +185,7 @@
                 float: left;
                 overflow: auto;
                 display: inline-block;
-                background-color: yellow;
+                background-color: #ebd1a2;
                 padding: 0px;
                 margin: 0px;
                 min-height: 500px;
@@ -148,7 +198,7 @@
                 overflow: auto;
                 display: inline-block;
                 min-height: 500px;
-                background-color: green
+            background-color: #ebd1a2;
             }
 
             .item {
@@ -159,7 +209,7 @@
             }
 
             #Total {
-                background-color: yellow;
+                background-color: #ebd1a2;
                 float: left;
                 display: inline-block;
                 width: 50%;
@@ -174,7 +224,7 @@
 
             #Buttons {
                 position: relative;
-                background-color: green;
+                background-color: #ebd1a2;
                 float: right;
                 display: inline-block;
                 width: 50%;
@@ -196,15 +246,129 @@
                 background-color: blue
             }
 
+            #ManualAuto {
+                background-color: #ef9961;
+            }
+
+            #Auto {
+                background-color: #ef9961;
+            }
+
+            /*Barcode Button*/
+            #Scanner {
+                display: inline-block;
+                margin: 5px;
+	            -moz-box-shadow:inset 0px 1px 0px 0px #fceaca;
+	            -webkit-box-shadow:inset 0px 1px 0px 0px #fceaca;
+	            box-shadow:inset 0px 1px 0px 0px #fceaca;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffce79), color-stop(1, #eeaf41) );
+	            background:-moz-linear-gradient( center top, #ffce79 5%, #eeaf41 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce79', endColorstr='#eeaf41');
+	            background-color:#ffce79;
+	            -webkit-border-top-left-radius:6px;
+	            -moz-border-radius-topleft:6px;
+	            border-top-left-radius:6px;
+	            -webkit-border-top-right-radius:6px;
+	            -moz-border-radius-topright:6px;
+	            border-top-right-radius:6px;
+	            -webkit-border-bottom-right-radius:6px;
+	            -moz-border-radius-bottomright:6px;
+	            border-bottom-right-radius:6px;
+	            -webkit-border-bottom-left-radius:6px;
+	            -moz-border-radius-bottomleft:6px;
+	            border-bottom-left-radius:6px;
+	            text-indent:0;
+	            border:1px solid #eeb44f;
+	            display:inline-block;
+	            color:#ffffff;
+	            font-family:Arial;
+	            font-size:15px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            width:121px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 0px #ce8e28;
+            }
+            #Scanner:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eeaf41), color-stop(1, #ffce79) );
+	            background:-moz-linear-gradient( center top, #eeaf41 5%, #ffce79 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeaf41', endColorstr='#ffce79');
+	            background-color:#eeaf41;
+            }
+            #Scanner:active {
+	            position:relative;
+	            top:1px;
+            }
+
+            /*Manual Insert Button*/
+            #Manual {
+                display: inline-block;
+                margin: 5px;
+	            -moz-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+	            -webkit-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+	            box-shadow:inset 0px 1px 0px 0px #e6cafc;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c579ff), color-stop(1, #a341ee) );
+	            background:-moz-linear-gradient( center top, #c579ff 5%, #a341ee 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c579ff', endColorstr='#a341ee');
+	            background-color:#c579ff;
+	            -webkit-border-top-left-radius:6px;
+	            -moz-border-radius-topleft:6px;
+	            border-top-left-radius:6px;
+	            -webkit-border-top-right-radius:6px;
+	            -moz-border-radius-topright:6px;
+	            border-top-right-radius:6px;
+	            -webkit-border-bottom-right-radius:6px;
+	            -moz-border-radius-bottomright:6px;
+	            border-bottom-right-radius:6px;
+	            -webkit-border-bottom-left-radius:6px;
+	            -moz-border-radius-bottomleft:6px;
+	            border-bottom-left-radius:6px;
+	            text-indent:0;
+	            border:1px solid #a946f5;
+	            display:inline-block;
+	            color:#ffffff;
+	            font-family:Arial;
+	            font-size:15px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            width:121px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 0px #8628ce;
+            }
+            #Manual:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a341ee), color-stop(1, #c579ff) );
+	            background:-moz-linear-gradient( center top, #a341ee 5%, #c579ff 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a341ee', endColorstr='#c579ff');
+	            background-color:#a341ee;
+            }
+            #Manual:active {
+	            position:relative;
+	            top:1px;
+            }
+
+            #Auto p {
+                color: white;
+                font-weight: bold;
+                display: inline-block;
+            }
+
             /*Left Side*/
             #UsrItem {
                 float: left;
                 height: fill-available;
                 width: 50%;
-                background-color: pink;
+                background-color: #ef9961;
             }
 
             #UsrItem p {
+                color: white;
+                font-weight: bold;
                 display: inline-block;
             }
 
@@ -212,10 +376,12 @@
                 float: left;
                 height: fill-available;
                 width: 50%;
-                background-color: pink;
+                background-color: #ef9961;
             }
 
             #UsrOwe p {
+                color: white;
+                font-weight: bold;
                 display: inline-block;
             }
 
@@ -224,10 +390,12 @@
                 float: right;
                 height: fill-available;
                 width: 50%;
-                background-color: purple;
+                background-color: #ef9961;
             }
 
             #UsrPrice p {
+                color: white;
+                font-weight: bold;
                 display: inline-block;
             }
 
@@ -237,10 +405,11 @@
                 float: right;
                 height: fill-available;
                 width: 50%;
-                background-color: purple;
+                background-color: #ef9961;
             }
 
             #UsrPaid p {
+                font-weight: bold;
                 display: inline-block;
             }
 
@@ -382,20 +551,21 @@
 	            background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
 	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
 	            background-color:#c62d1f;
-            }
+        }
 
             /*End Button Style*/
 
+            /*Overlay3*/
             #Overlay3 {
                 height: 100%;
                 width: 100%;
-                background-color: purple;
+                background-color: #a131ef;
             }
 
             #Setup {
                 margin: 25%;
                 margin-top: 0px;
-                background-color: yellow;
+                background-color: #cae3fc;
             }
 
             #Setup h1 {
@@ -406,6 +576,13 @@
                 display: inline-block;
             }
 
+            #ModifyP {
+                font-size: 1.5em;
+                text-decoration: underline;
+                color: black;
+            }
+
+            /*Button for finishing setup*/
             #SetupSubmit {
                 width: 100%;
                 display: inline-block;
@@ -453,9 +630,178 @@
 	            position:relative;
 	            top:1px;
             }
+
+            #Inventory {
+                margin: 25%;
+                margin-top: 0px;
+                background-color: #cae3fc;
+                min-height: 500px;
+            }
+
+            #Inventory h1 {
+                text-align: center;
+            }
+
+            .InventoryP {
+                display: inline-block;
+            }
+
+            /*Button for adding items into the inventory*/
+            #InventoryInsert {
+	            display: inline-block;
+                -moz-box-shadow:inset 0px 1px 5px 0px #ffffff;
+	            -webkit-box-shadow:inset 0px 1px 5px 0px #ffffff;
+	            box-shadow:inset 0px 1px 5px 0px #ffffff;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	            background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	            background-color:#ededed;
+	            -webkit-border-top-left-radius:10px;
+	            -moz-border-radius-topleft:10px;
+	            border-top-left-radius:10px;
+	            -webkit-border-top-right-radius:10px;
+	            -moz-border-radius-topright:10px;
+	            border-top-right-radius:10px;
+	            -webkit-border-bottom-right-radius:10px;
+	            -moz-border-radius-bottomright:10px;
+	            border-bottom-right-radius:10px;
+	            -webkit-border-bottom-left-radius:10px;
+	            -moz-border-radius-bottomleft:10px;
+	            border-bottom-left-radius:10px;
+	            text-indent:0;
+	            border:1px solid #dcdcdc;
+	            display:inline-block;
+	            color:#777777;
+	            font-family:arial;
+	            font-size:15px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            width:100px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 17px #ffffff;
+            }
+            #InventoryInsert:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	            background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	            background-color:#dfdfdf;
+            }
+            #InventoryInsert:active {
+	            position:relative;
+	            top:1px;
+            }
+
+            #ItemList {
+                background-color: #79bbff;
+                min-height: 250px;
+                border-radius: 25px;
+                margin: 5px;
+            }
+
+            /*Button for clearing the inventory*/
+            #InventoryClear {
+	            display: inline-block;
+                float: left;
+                -moz-box-shadow:inset 0px 1px 5px 0px #cae3fc;
+	            -webkit-box-shadow:inset 0px 1px 5px 0px #cae3fc;
+	            box-shadow:inset 0px 1px 5px 0px #cae3fc;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	            background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	            background-color:#79bbff;
+	            -webkit-border-top-left-radius:10px;
+	            -moz-border-radius-topleft:10px;
+	            border-top-left-radius:10px;
+	            -webkit-border-top-right-radius:10px;
+	            -moz-border-radius-topright:10px;
+	            border-top-right-radius:10px;
+	            -webkit-border-bottom-right-radius:10px;
+	            -moz-border-radius-bottomright:10px;
+	            border-bottom-right-radius:10px;
+	            -webkit-border-bottom-left-radius:10px;
+	            -moz-border-radius-bottomleft:10px;
+	            border-bottom-left-radius:10px;
+	            text-indent:0;
+	            border:1px solid #469df5;
+	            display:inline-block;
+	            color:#ffffff;
+	            font-family:Arial;
+	            font-size:15px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            width:100px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 17px #287ace;
+            }
+            #InventoryClear:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	            background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	            background-color:#4197ee;
+            }
+            #InventoryClear:active {
+	            position:relative;
+	            top:1px;
+            }
+
+            /*Button for exiting the inventory edit screen*/
+            #ExitInventory {
+	            display: inline-block;
+                float: right;
+                -moz-box-shadow:inset 0px 1px 5px 0px #f29c93;
+	            -webkit-box-shadow:inset 0px 1px 5px 0px #f29c93;
+	            box-shadow:inset 0px 1px 5px 0px #f29c93;
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	            background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	            background-color:#fe1a00;
+	            -webkit-border-top-left-radius:10px;
+	            -moz-border-radius-topleft:10px;
+	            border-top-left-radius:10px;
+	            -webkit-border-top-right-radius:10px;
+	            -moz-border-radius-topright:10px;
+	            border-top-right-radius:10px;
+	            -webkit-border-bottom-right-radius:10px;
+	            -moz-border-radius-bottomright:10px;
+	            border-bottom-right-radius:10px;
+	            -webkit-border-bottom-left-radius:10px;
+	            -moz-border-radius-bottomleft:10px;
+	            border-bottom-left-radius:10px;
+	            text-indent:0;
+	            border:1px solid #d83526;
+	            display:inline-block;
+	            color:#ffffff;
+	            font-family:Arial;
+	            font-size:15px;
+	            font-weight:bold;
+	            font-style:normal;
+	            height:50px;
+	            line-height:50px;
+	            width:100px;
+	            text-decoration:none;
+	            text-align:center;
+	            text-shadow:1px 1px 17px #b23e35;
+            }
+            #ExitInventory:hover {
+	            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	            background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+	            background-color:#ce0100;
+            }
+            #ExitInventory:active {
+	            position:relative;
+	            top:1px;
+            }
+            
         </style>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript">
+        <script type='text/javascript'>
             //Setup Cash Register Object
             var CashRegister = {
 
@@ -464,6 +810,7 @@
                 Total: 0,
                 Currency: undefined,
                 Tax: undefined,
+                inventory: [],
 
                 //Declare Functions
                 Start: function () {
@@ -473,18 +820,31 @@
                     $('#UsrOwe').hide();
                     $('#UsrPaid').hide();
                     $('#Reset').hide();
+                    $('#ManualAuto').hide();
+                    $('#Auto').hide();
                     //Setup Event Handlers
                     $('#OverlayButton').click(CashRegister.Overlayer);
                     $('#SetupSubmit').on('click', CashRegister.Setup);
+                    $('#ModifyP').click(CashRegister.InventoryEdit);
                     $('#Submit').on("click", CashRegister.Submit);
                     $('#Checkout').on("click", CashRegister.Checkout);
                     $('#Reset').on("click", CashRegister.Reset);
+                    $('#InventoryInsert').click(CashRegister.AddInventory);
+                    $('#Scanner').click(CashRegister.AutoInsertGui);
+                    $('#Manual').click(CashRegister.ManualInsert);
+                    $('#GoBack').click(CashRegister.GoBack);
+                    $('#GoBack2').click(CashRegister.GoBack);
+                    $('#Settings').click(CashRegister.Overlayer);
+                    $('#ExitInventory').click(CashRegister.ExitInventory);
+                    $('#InventoryClear').click(CashRegister.ClearInventory);
                 },
 
                 //The 'start' button
                 Overlayer: function () {
                     $('#Overlay1').fadeOut('slow');
+                    $('#Overlay2').hide();
                     $('#Overlay3').fadeIn('slow');
+                    $('#Inventory').hide();
                 },
 
                 //Setup Page 
@@ -495,24 +855,70 @@
                     //Make sure input is valid
                     if (CashRegister.Currency == null || CashRegister.Currency == "") {
                         alert("Please select a Currency");
+                        return false;
                     }
-                    else {
-                        console.log(CashRegister.Currency);
-                    }
+
                     if (CashRegister.Tax == null || CashRegister.Tax == "") {
                         alert("Please fill in the tax");
                         return false;
                     }
-                    else if (isNaN(CashRegister.Tax)) {
+                    if (isNaN(CashRegister.Tax)) {
                         alert("Please insert the tax in a numerical form.");
+                        return false;
                     }
-                    else {
-                        console.log(CashRegister.Tax); //For debug purposes
-                    }
+
                     //Update GUI
                     $('#Overlay3').hide();
                     $('#Overlay2').show();
+                    $('#UsrItem').hide();
+                    $('#UsrPrice').hide();
+                    $('#ManualAuto').show()
                     $('input').keyup(CashRegister.SubmitEnter);
+                },
+
+                InventoryEdit: function () {
+                    $('#Setup').hide();
+                    $('#Inventory').show();
+                },
+
+                ClearInventory: function () {
+                    //Find All Objects made outside the array
+                    for (i = 0; i < CashRegister.inventory.length; i++) {
+                        var Name = CashRegister.inventory[i].barcode;
+                        window[Name] = null;
+                    }
+                    //Clear GUI and Array
+                    $('.item').remove();
+                    CashRegister.inventory = [];
+                },
+
+                //Constructor for making new inventory items
+                InventoryItem: function (barcode, name, price) {
+                    this.barcode = barcode;
+                    this.ItemName = name;
+                    this.ItemPrice = price;
+                    CashRegister.inventory.push(this)
+                },
+
+                AddInventory: function () {
+                    //Declare Variables
+                    Barcode = $('input[name=Barcode]').val();
+                    ItemName = $('input[name=InventoryItem]').val();
+                    PriceVal = $('input[name=InventoryPrice]').val();
+                    //Verifies that the input box values are correct/not already existing
+                    if (window["b" + Barcode] != null) { alert("This item has already been defined"); return false; }
+                    if (isNaN(Barcode)) { alert("The barcode is not a number"); return false; }
+                    if (ItemName == null || ItemName == "") { alert("Please enter an item name"); return false; }
+                    if (PriceVal == null || PriceVal == "") { alert("Please enter a price"); return false; }
+                    if (isNaN(PriceVal)) { alert("Please enter a price in a numerical form"); return false; }
+                    //Shows in GUI and uses constructor to create the new inventory item 
+                    $('#Placeholder').append('<p class="item">' + 'Barcode: ' + Barcode + '    ' + 'Item: ' + ItemName + '    ' + 'Price: ' + PriceVal + '</p>');
+                    window["b" + Barcode] = new CashRegister.InventoryItem("b" + Barcode, ItemName, PriceVal);
+                },
+
+                ExitInventory: function () {
+                    $('#Inventory').hide();
+                    $('#Setup').show();
                 },
 
                 //Repurpose use of 'enter' key
@@ -520,6 +926,52 @@
                     if (event.keyCode == 13) {
                         $("#Submit").click();
                     }
+                },
+
+                AutoInsertGui: function () {
+                    $('#ManualAuto').hide();
+                    $('#Auto').show();
+                    $('#Submit').off();
+                    $('#Submit').on('click', CashRegister.AutoInsert);
+                },
+
+                AutoInsert: function () {
+                 Barcode = $('input[name="Barcode2"]').val();
+                //For statement to find Barcode match in array
+                    for (i = 0; i < CashRegister.inventory.length; i++) {
+                        if ("b" + Barcode == CashRegister.inventory[i].barcode) {
+                            $('#Price').append('<p class="item">' + CashRegister.inventory[i].ItemPrice + '</p>');
+                            //Calculates and shows current subtotal
+                            CashRegister.Subtotal += Number(CashRegister.inventory[i].ItemPrice);
+                            $('#LogSubtotal').html('Subtotal: ' + CashRegister.Currency + CashRegister.Subtotal);
+                            //Calculates and shows current tax
+                            Tax = Number(CashRegister.Tax) / 100
+                            $('#LogTax').html('Tax: ' + CashRegister.Currency + (Tax * CashRegister.Subtotal))
+                            //Calculates and shows current total
+                            CashRegister.Total = Tax * CashRegister.Subtotal + CashRegister.Subtotal;
+                            $('#LogTotal').html('Total: ' + CashRegister.Currency + CashRegister.Total)
+                            $('#Item').append('<p class="item">' + CashRegister.inventory[i].ItemName + '</p>');
+                        }
+                        //If no match is found
+                        else if (i == CashRegister.inventory.length - 1) {
+                            alert("The barcode you listed isn't registered");
+                        }
+                    }
+                },
+
+                ManualInsert: function () {
+                    $('#ManualAuto').hide();
+                    $('#UsrItem').show();
+                    $('#UsrPrice').show();
+                    $('#Submit').off();
+                    $('#Submit').on('click', CashRegister.Submit)
+                },
+
+                GoBack: function () {
+                    $('#Auto').hide();
+                    $('#UsrItem').hide();
+                    $('#UsrPrice').hide();
+                    $('#ManualAuto').show();
                 },
 
                 //Code for item submission
@@ -530,30 +982,31 @@
                     //Verifies that the value in the 'Price Box' is valid
                     if (CashRegister.PriceVal == "" || CashRegister.PriceVal == null) {
                         alert("Please Enter in a Price");
+                        return false;
                     }
-                    else if (isNaN(CashRegister.PriceVal)) {
+                    if (isNaN(CashRegister.PriceVal)) {
                         alert("The value in the Price Box is Not a Number");
+                        return false;
+                    }
+                    $('#Price').append('<p class="item">' + CashRegister.PriceVal + '</p>');
+                    //Calculates and shows current subtotal
+                    CashRegister.Subtotal += Number(CashRegister.PriceVal);
+                    $('#LogSubtotal').html('Subtotal: ' + CashRegister.Currency + CashRegister.Subtotal.toFixed(2));
+                    //Calculates and shows current tax
+                    Tax = Number(CashRegister.Tax) / 100
+                    $('#LogTax').html('Tax: ' + CashRegister.Currency + (Tax * CashRegister.Subtotal).toFixed(2))
+                    //Calculates and shows current total
+                    CashRegister.Total = Tax * CashRegister.Subtotal + CashRegister.Subtotal;
+                    $('#LogTotal').html('Total: ' + CashRegister.Currency + CashRegister.Total.toFixed(2))
+                    //Checks items name then appends it
+                    if (CashRegister.ItemName == "" || CashRegister.ItemName == null) {
+                        $('#Item').append('<p class="item"> Unidentified Item </p>');
                     }
                     else {
-                        $('#Price').append('<p class="item">' + CashRegister.PriceVal + '</p>');
-                        //Calculates and shows current subtotal
-                        CashRegister.Subtotal += Number(CashRegister.PriceVal);
-                        $('#LogSubtotal').html('Subtotal: ' + CashRegister.Currency + CashRegister.Subtotal);
-                        //Calculates and shows current tax
-                        Tax = Number(CashRegister.Tax) / 100
-                        $('#LogTax').html('Tax: ' + CashRegister.Currency + (Tax * CashRegister.Subtotal))
-                        //Calcualtes and shows current total
-                        CashRegister.Total = Tax * CashRegister.Subtotal + CashRegister.Subtotal;
-                        $('#LogTotal').html('Total: ' + CashRegister.Currency + CashRegister.Total)
-                        //Checks items name then appends it
-                        if (CashRegister.ItemName == "" || CashRegister.ItemName == null) {
-                            $('#Item').append('<p class="item"> Unidentified Item </p>');
-                        }
-                        else {
-                            $('#Item').append('<p class="item">' + CashRegister.ItemName + '</p>');
-                        }
+                        $('#Item').append('<p class="item">' + CashRegister.ItemName + '</p>');
                     }
                 },
+
 
                 //Code for checkout
                 Checkout: function () {
@@ -562,6 +1015,8 @@
                     $('#UsrItem').hide();
                     $('#UsrPrice').hide();
                     $('#Checkout').hide();
+                    $('#ManualAuto').hide();
+                    $('#Auto').hide();
                     $('#UsrOwe').show();
                     $('#UsrPaid').show();
                     $('#Reset').show();
@@ -576,10 +1031,10 @@
                             alert("Please insert the amount paid in a numerical form.");
                         }
                         else if (Change < 0) {
-                            $('#Change').html('Amount Left: ' + Math.abs(Change));
+                            $('#Change').html('Amount Left: ' +  CashRegister.Currency + Math.abs(Change));
                         }
                         else {
-                            $('#Change').html('Change: ' + Change);
+                            $('#Change').html('Change: ' + CashRegister.Currency + Change);
                         }
                     })
                 },
@@ -593,9 +1048,10 @@
                     $('#UsrOwe').hide();
                     $('#UsrPaid').hide();
                     $('#Reset').hide();
-                    $('#UsrItem').show();
-                    $('#UsrPrice').show();
+                    $('#UsrItem').hide();
+                    $('#UsrPrice').hide();
                     $('#Checkout').show();
+                    $('#ManualAuto').show();
                     //Reset previous entries and changes
                     $('.item').remove();
                     CashRegister.Total = 0;
@@ -606,8 +1062,9 @@
                 }
             }
 
-            //Start code
-            $(document).ready(CashRegister.Start);
+//Start code
+$(document).ready(CashRegister.Start);
+
         </script>
         <title>Cash Register</title>
     </head>
@@ -636,7 +1093,23 @@
                 <p class="psetup">Tax</p>
                 <input type="text" name="Tax"/>
                 <p class="psetup">%</p>
+                <a href="#"><p id="ModifyP">Modify Inventory</p></a>
                 <div id="SetupSubmit">Enter</div>
+            </div>
+            <!--Inventory Editor-->
+            <div id="Inventory">
+                <h1>Inventory</h1>
+                <p class="InventoryP">Barcode</p> <input id="Barcode" name="Barcode" type="text"/>
+                <p class="InventoryP">Item Name</p> <input id="InventoryItem" name="InventoryItem" type="text"/>
+                <p class="InventoryP">Price</p> <input id="InventoryPrice" name="InventoryPrice" type="text"/>
+                <div id="InventoryInsert">Enter</div>
+                <br/><br/>
+                <div id="ItemList">
+                <p id="Placeholder"></p>
+                </div>
+                <br/>
+                <div id="InventoryClear">Reset</div>
+                <div id="ExitInventory">Finished</div>
             </div>
         </div>
         <!--Overlay 2-->
@@ -644,6 +1117,7 @@
             <div id="Header">
                 <p id="Title">Cash Register<span>Presented by Maxo2708</span></p>
                 <a href="https://github.com/maxo2708/web-cash-register" id="Github">Find this on GitHub!</a>
+                <div id="Settings">Settings</div>
             </div>
             
             <!--Main Application-->
@@ -672,6 +1146,13 @@
            <!--User Input-->
              <div id="Entry">
                 <form>
+                    <div id="ManualAuto">
+                    <div id="Scanner">Scan Barcode</div>
+                    <div id="Manual">Insert Manually</div>
+                    </div>
+                    <div id="Auto">
+                    <p class="Blue">Barcode:</p><input type="text" name="Barcode2"/> <small class="Blue" id="GoBack">Back</small>
+                    </div>
                     <div id="UsrItem"> 
 		                <p>Item Name: </p><input name="ItemName" id="ItemName"type="text"/>
                      </div>
@@ -679,7 +1160,7 @@
                         <p>Amount Paid: </p><input name="UsrPaid" id="ItemName"type="text"/>
                     </div>
                     <div id="UsrPrice">
-                        <p>Price: </p><input name="PriceVal" id="PriceVal"type="number"/>
+                        <p>Price: </p><input name="PriceVal" id="PriceVal"type="number"/> <small id="GoBack2">Back</small>
                     </div>
                     <div id="UsrPaid">
                         <p id="Change">Change: </p>
