@@ -1,5 +1,5 @@
 /*Overlay 1*/
-#Overlay1 {
+#Overlay1 { 
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -94,7 +94,7 @@
 #Header {
     height: 10%;
     width:100%;
-    background-color:gray;
+    background-color: #907373;
     clear: both;
     font-family: Verdana;
     font-weight: bold; 
@@ -108,6 +108,56 @@
     float: right;
     margin-top: 0.01em;
     padding-top: 0.3em;
+}
+
+/*Settings Button*/
+#Settings {
+	margin-top: 40px;
+    display: inline-block;
+    float: right;
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+#Settings:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+#Settings:active {
+	position:relative;
+	top:1px;
 }
 
 #Title {
@@ -129,7 +179,7 @@
     float: left;
     overflow: auto;
     display: inline-block;
-    background-color: yellow;
+    background-color: #ebd1a2;
     padding: 0px;
     margin: 0px;
     min-height: 500px;
@@ -142,7 +192,7 @@
     overflow: auto;
     display: inline-block;
     min-height: 500px;
-    background-color: green
+    background-color: #ebd1a2;
 }
 
 .item {
@@ -153,7 +203,7 @@
 }
 
 #Total {
-    background-color: yellow;
+    background-color: #ebd1a2;
     float: left;
     display: inline-block;
     width: 50%;
@@ -168,7 +218,7 @@
 
 #Buttons {
     position: relative;
-    background-color: green;
+    background-color: #ebd1a2;
     float: right;
     display: inline-block;
     width: 50%;
@@ -190,15 +240,129 @@
     background-color: blue
 }
 
+#ManualAuto {
+    background-color: #ef9961;
+}
+
+#Auto {
+    background-color: #ef9961;
+}
+
+/*Barcode Button*/
+#Scanner {
+    display: inline-block;
+    margin: 5px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #fceaca;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fceaca;
+	box-shadow:inset 0px 1px 0px 0px #fceaca;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffce79), color-stop(1, #eeaf41) );
+	background:-moz-linear-gradient( center top, #ffce79 5%, #eeaf41 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce79', endColorstr='#eeaf41');
+	background-color:#ffce79;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:121px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ce8e28;
+}
+#Scanner:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eeaf41), color-stop(1, #ffce79) );
+	background:-moz-linear-gradient( center top, #eeaf41 5%, #ffce79 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeaf41', endColorstr='#ffce79');
+	background-color:#eeaf41;
+}
+#Scanner:active {
+	position:relative;
+	top:1px;
+}
+
+/*Manual Insert Button*/
+#Manual {
+    display: inline-block;
+    margin: 5px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+	box-shadow:inset 0px 1px 0px 0px #e6cafc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c579ff), color-stop(1, #a341ee) );
+	background:-moz-linear-gradient( center top, #c579ff 5%, #a341ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c579ff', endColorstr='#a341ee');
+	background-color:#c579ff;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #a946f5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:121px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #8628ce;
+}
+#Manual:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a341ee), color-stop(1, #c579ff) );
+	background:-moz-linear-gradient( center top, #a341ee 5%, #c579ff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a341ee', endColorstr='#c579ff');
+	background-color:#a341ee;
+}
+#Manual:active {
+	position:relative;
+	top:1px;
+}
+
+#Auto p {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
 /*Left Side*/
 #UsrItem {
     float: left;
     height: fill-available;
     width: 50%;
-    background-color: pink;
+    background-color: #ef9961;
 }
 
 #UsrItem p {
+    color: white;
+    font-weight: bold;
     display: inline-block;
 }
 
@@ -206,10 +370,12 @@
     float: left;
     height: fill-available;
     width: 50%;
-    background-color: pink;
+    background-color: #ef9961;
 }
 
 #UsrOwe p {
+    color: white;
+    font-weight: bold;
     display: inline-block;
 }
 
@@ -218,10 +384,12 @@
     float: right;
     height: fill-available;
     width: 50%;
-    background-color: purple;
+    background-color: #ef9961;
 }
 
 #UsrPrice p {
+    color: white;
+    font-weight: bold;
     display: inline-block;
 }
 
@@ -231,10 +399,11 @@
     float: right;
     height: fill-available;
     width: 50%;
-    background-color: purple;
+    background-color: #ef9961;
 }
 
 #UsrPaid p {
+    font-weight: bold;
     display: inline-block;
 }
 
@@ -380,16 +549,17 @@
 
 /*End Button Style*/
 
+/*Overlay3*/
 #Overlay3 {
     height: 100%;
     width: 100%;
-    background-color: purple;
+    background-color: #a131ef;
 }
 
 #Setup {
     margin: 25%;
     margin-top: 0px;
-    background-color: yellow;
+    background-color: #cae3fc;
 }
 
 #Setup h1 {
@@ -400,6 +570,13 @@
     display: inline-block;
 }
 
+#ModifyP {
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: black;
+}
+
+/*Button for finishing setup*/
 #SetupSubmit {
     width: 100%;
     display: inline-block;
@@ -444,6 +621,174 @@
 	background-color:#c62d1f;
 }
 #SetupSubmit:active {
+	position:relative;
+	top:1px;
+}
+
+#Inventory {
+    margin: 25%;
+    margin-top: 0px;
+    background-color: #cae3fc;
+    min-height: 500px;
+}
+
+#Inventory h1 {
+    text-align: center;
+}
+
+.InventoryP {
+    display: inline-block;
+}
+
+/*Button for adding items into the inventory*/
+#InventoryInsert {
+	display: inline-block;
+    -moz-box-shadow:inset 0px 1px 5px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 5px 0px #ffffff;
+	box-shadow:inset 0px 1px 5px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 17px #ffffff;
+}
+#InventoryInsert:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+#InventoryInsert:active {
+	position:relative;
+	top:1px;
+}
+
+#ItemList {
+    background-color: #79bbff;
+    min-height: 250px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+/*Button for clearing the inventory*/
+#InventoryClear {
+	display: inline-block;
+    float: left;
+    -moz-box-shadow:inset 0px 1px 5px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 5px 0px #cae3fc;
+	box-shadow:inset 0px 1px 5px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+	text-indent:0;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 17px #287ace;
+}
+#InventoryClear:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}
+#InventoryClear:active {
+	position:relative;
+	top:1px;
+}
+
+/*Button for exiting the inventory edit screen*/
+#ExitInventory {
+	display: inline-block;
+    float: right;
+    -moz-box-shadow:inset 0px 1px 5px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 5px 0px #f29c93;
+	box-shadow:inset 0px 1px 5px 0px #f29c93;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color:#fe1a00;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+	text-indent:0;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 17px #b23e35;
+}
+#ExitInventory:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+	background-color:#ce0100;
+}
+#ExitInventory:active {
 	position:relative;
 	top:1px;
 }
