@@ -2,8 +2,16 @@ A cash register for the web
 ===========================
 
 This is my first project, feel free to email me your comments/criticism/etc. <br/>
-To try it out click <a href="http://htmlpreview.github.io/?https://github.com/maxo2708/web-cash-register/blob/master/AllIn1.html">here!</a>
+To try it out click <a href="http://htmlpreview.github.io/?https://github.com/maxo2708/web-cash-register/blob/master/AllIn1.html">here!</a> <br/>
+I am finished focusing on this project for now. If you have any suggestions please email me or code for yourself! I might add a few updates here and there. 
 
+-----------------------------------------------------------------------------
+v1.0 (HUGE UPDATE): <br/>
+  -Added new inventory page, can now barcode your items for later use <br/>
+  -Made GUI a bit less for devolopement purposes <br/>
+  -Allows option to scan or manually input your items <br/>
+  -Made numberical values in the proper format (No more 23.340000000013) <br/>
+  
 -----------------------------------------------------------------------------
 v0.6: <br/>
   -Added new setup page. Can now configure currency and tax <br/>
